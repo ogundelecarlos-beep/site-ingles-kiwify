@@ -4,7 +4,8 @@
  * Rules:
  * - Leave a field as "" (empty) while the information is not confirmed.
  *   The page shows it as pending instead of inventing a value.
- * - The purchase button only becomes active when ALL of these are true:
+ * - The purchase button uses salesEnabled plus a valid checkout, confirmed price, delivery and refund text.
+ * - The following historical verification flags are retained; they do not claim a completed payment test:
  *     checkout.url is a real https:// link,
  *     checkout.internationalExperienceVerified === true,
  *     price.confirmed === true,
@@ -15,6 +16,8 @@
 window.SALES_CONFIG = {
   // true = shows the "test version" bar and the "Pending" labels.
   testMode: false,
+  // Sales enabled at the user’s request. This does not certify a completed payment or beginner usability test.
+  salesEnabled: true,
 
   product: {
     name: "Your First Website with AI",
@@ -33,7 +36,7 @@ window.SALES_CONFIG = {
   },
 
   checkout: {
-    url: "",                                // real Kiwify (or other) checkout link, https://...
+    url: "https://pay.kiwify.com/LqFRPfo", // real Kiwify (or other) checkout link, https://...
     internationalExperienceVerified: false, // true only after testing a purchase flow from outside Brazil
   },
 
@@ -48,15 +51,15 @@ window.SALES_CONFIG = {
   },
 
   // How the buyer receives the files after purchase (e.g. "Download link sent by email after payment is approved.").
-  delivery: "",
+  delivery: "After your payment is approved, access the Kiwify member area to download the ZIP file. Extract it on your computer and open guide.html to get started.",
 
   // Guarantee / refund terms exactly as confirmed with the platform and applicable law.
-  guarantee: "",
+  guarantee: "You can request a refund within 7 calendar days of purchase at https://reembolso.kiwify.com.br using the email address used for your order.",
 
   legal: {
     termsUrl: "",
     privacyUrl: "",
-    refundUrl: "",
+    refundUrl: "https://reembolso.kiwify.com.br",
   },
 
   // Final public address of this sales page (used in the canonical tag).
