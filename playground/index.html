@@ -1,0 +1,191 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Try the templates — Your First Website with AI</title><meta name="description" content="Try changing the name, headline and main color of the fictional template demos. This editor is a demonstration only and is not part of the kit."><link rel="icon" href="../assets/favicon.svg"><link rel="stylesheet" href="../styles.css">
+<style>
+.pg{display:grid;grid-template-columns:340px 1fr;gap:32px;align-items:start;padding-top:40px;padding-bottom:60px}
+.pg-intro{padding-top:45px}
+.pg-intro h1{font-size:clamp(36px,4.2vw,56px);margin-bottom:16px}
+.pg-intro .lead{max-width:640px}
+.pg-notice{background:#edf0e6;border:1px solid #d2ddce;border-radius:10px;padding:16px 18px;font-size:13px;max-width:760px;margin-top:20px}
+.pg-notice strong{display:block;font-size:14px;margin-bottom:4px}
+.pg-notice p{margin:0}
+.pg-panel{background:#fffdf8;border:1px solid #d5dece;border-radius:14px;padding:22px;position:sticky;top:20px}
+.pg-panel fieldset{border:0;padding:0;margin:0 0 18px}
+.pg-panel legend,.pg-panel label{display:block;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:7px}
+.pg-choices{display:grid;gap:6px}
+.pg-choices label{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:500;letter-spacing:0;margin:0;padding:9px 11px;border:1px solid #d5dece;border-radius:8px;cursor:pointer}
+.pg-choices label:has(input:checked){border-color:#193c32;background:#edf0e6}
+.pg-choices input{accent-color:#193c32;margin:0}
+.pg-field{margin-bottom:16px}
+.pg-field input[type=text]{width:100%;font:inherit;font-size:15px;padding:10px 12px;border:1px solid #b9c6b5;border-radius:8px;background:#fff;color:#193c32}
+.pg-color{display:flex;align-items:center;gap:10px}
+.pg-color input[type=color]{width:52px;height:42px;padding:3px;border:1px solid #b9c6b5;border-radius:8px;background:#fff;cursor:pointer}
+.pg-color code{font-size:13px}
+.pg-hint{font-size:11.5px;color:#61736c;margin:6px 0 0}
+.pg-contrast{font-size:12.5px;border-radius:8px;padding:9px 11px;margin:0 0 16px;background:#edf0e6}
+.pg-contrast.warn{background:#fbeee0;color:#6b3a10}
+.pg-reset{width:100%;border:1px solid #193c32;background:transparent;color:#193c32;padding:11px;border-radius:8px;font-weight:600;font-size:14px;cursor:pointer}
+.pg-reset:hover{background:#edf0e6}
+.pg-stage{min-width:0}
+.pg-stage-head{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;margin-bottom:10px}
+.pg-stage-head a{font-weight:600}
+.pg-frame{display:block;width:100%;height:min(78vh,820px);border:1px solid #d2ddce;border-radius:12px;background:#fff;box-shadow:0 20px 50px -35px #193c3266}
+.pg-map{margin-top:28px}
+.pg-map h2{font-size:clamp(26px,3vw,36px);margin-bottom:14px}
+.pg-map table{border-collapse:collapse;width:100%;font-size:13px}
+.pg-map th,.pg-map td{text-align:left;padding:10px 12px;border-bottom:1px solid #d5dece;vertical-align:top}
+.pg-map th{font-size:11px;letter-spacing:.5px}
+.pg-map code{background:#edf0e6;padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+.pg-cta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:26px}
+@media(max-width:900px){.pg{grid-template-columns:1fr;gap:22px}.pg-panel{position:static}.pg-frame{height:72vh}}
+@media(max-width:650px){.pg-intro{padding-top:28px}.pg{padding-top:20px}.pg-panel{padding:18px}.pg-map th:first-child,.pg-map td:first-child{width:30%}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap"><a class="brand" href="../"><span class="logo">↗</span> Your First Website<span class="brand-tag">WITH AI</span></a><nav aria-label="Main"><a href="../#templates">Templates</a><a href="../#included">The kit</a><a href="../#faq">FAQ</a></nav><a class="small-button" href="../#offer">Explore the kit ↗</a></header>
+<main id="main">
+<section class="wrap pg-intro"><p class="eyebrow"><span></span> INTERACTIVE DEMO</p><h1>Try the templates.</h1><p class="lead">Pick one of the three fictional demos, change the business name, the headline and the main color, and see the page update.</p>
+<div class="pg-notice" role="note"><strong>This editor is only a demonstration.</strong><p>It is not part of the kit. In the kit, you make these changes yourself by editing the HTML file in a text editor, following the written guide. Nothing you type here is saved or sent anywhere; reloading the page brings back the original.</p></div></section>
+
+<section class="wrap pg" aria-label="Template editor">
+<form class="pg-panel" id="pg-form" autocomplete="off" novalidate>
+<fieldset><legend>1. Choose a template</legend><div class="pg-choices">
+<label><input type="radio" name="template" value="service-providers" checked> Service providers</label>
+<label><input type="radio" name="template" value="sports-school"> Sports schools</label>
+<label><input type="radio" name="template" value="independent-professional"> Independent professionals</label>
+</div></fieldset>
+<div class="pg-field"><label for="pg-name">2. Business name</label><input type="text" id="pg-name" maxlength="40" spellcheck="false"></div>
+<div class="pg-field"><label for="pg-title">3. Headline</label><input type="text" id="pg-title" maxlength="80"></div>
+<div class="pg-field"><label for="pg-color">4. Main color</label><div class="pg-color"><input type="color" id="pg-color" value="#236d58"><code id="pg-color-value">#236d58</code></div><p class="pg-hint">Used for buttons, small labels and the focus outline.</p></div>
+<p class="pg-contrast" id="pg-contrast" role="status" aria-live="polite">Checking readability…</p>
+<button type="button" class="pg-reset" id="pg-reset">Restore the original</button>
+</form>
+
+<div class="pg-stage"><div class="pg-stage-head"><span id="pg-stage-label">Live preview · fictional business</span><a id="pg-open" href="../demos/service-providers.html" target="_blank" rel="noopener">Open original demo ↗</a></div>
+<iframe class="pg-frame" id="pg-frame" title="Preview of the selected template demo" src="../demos/service-providers.html"></iframe></div>
+</section>
+
+<section class="wrap pg-map" aria-labelledby="pg-map-title"><h2 id="pg-map-title">How you'd do this in the kit</h2>
+<table><thead><tr><th scope="col">Change</th><th scope="col">In the kit's HTML file</th></tr></thead><tbody>
+<tr><td>Business name</td><td>Use your text editor's Find and Replace to change the sample name everywhere at once.</td></tr>
+<tr><td>Headline</td><td>Edit the text inside <code>&lt;h1&gt;…&lt;/h1&gt;</code>.</td></tr>
+<tr><td>Main color</td><td>Change <code>--accent</code> in the color variables at the top of the file (<code>:root</code>), then check that text stays easy to read.</td></tr>
+</tbody></table>
+<div class="pg-cta"><a class="button" href="../#offer">See what's in the kit</a><a class="text-link" href="../#templates">Back to the templates</a></div>
+</section>
+</main>
+<footer class="wrap"><div><a class="brand" href="../">Your First Website with AI</a><p>Created by Carlos Eduardo.<br><a href="mailto:ogundelecarlos@gmail.com">ogundelecarlos@gmail.com</a></p></div><p class="fine">The demos show fictional businesses. This editor is a demonstration on this website and is not included in the kit.<br>This page does not collect form submissions or use analytics.</p></footer>
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('pg-form');
+  var frame = document.getElementById('pg-frame');
+  var nameIn = document.getElementById('pg-name');
+  var titleIn = document.getElementById('pg-title');
+  var colorIn = document.getElementById('pg-color');
+  var colorVal = document.getElementById('pg-color-value');
+  var contrastEl = document.getElementById('pg-contrast');
+  var openLink = document.getElementById('pg-open');
+  var original = null; // values read from the demo file each time it loads
+
+  function doc() { try { return frame.contentDocument; } catch (e) { return null; } }
+
+  // WCAG relative luminance and contrast ratio
+  function lum(hex) {
+    var h = hex.replace('#', '');
+    if (h.length === 3) h = h.replace(/./g, '$&$&');
+    return [0, 2, 4].map(function (i) {
+      var c = parseInt(h.substr(i, 2), 16) / 255;
+      return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+    }).reduce(function (s, c, i) { return s + c * [0.2126, 0.7152, 0.0722][i]; }, 0);
+  }
+  function ratio(a, b) { var x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); }
+  function normHex(v) {
+    v = (v || '').trim().toLowerCase();
+    if (/^#[0-9a-f]{3}$/.test(v)) v = '#' + v[1] + v[1] + v[2] + v[2] + v[3] + v[3];
+    return /^#[0-9a-f]{6}$/.test(v) ? v : null;
+  }
+
+  function readOriginal(d) {
+    var css = getComputedStyle(d.documentElement);
+    var brand = d.querySelector('header .brand');
+    var h1 = d.querySelector('h1');
+    var footer = d.querySelector('footer');
+    return {
+      name: brand ? brand.textContent : '',
+      title: h1 ? h1.textContent : '',
+      accent: normHex(css.getPropertyValue('--accent')) || '#000000',
+      bg: normHex(css.getPropertyValue('--bg')) || '#ffffff',
+      button: normHex(css.getPropertyValue('--button')) || '#ffffff',
+      docTitle: d.title,
+      footer: footer && footer.firstChild && footer.firstChild.nodeType === 3 ? footer.firstChild.nodeValue : null
+    };
+  }
+
+  function apply() {
+    var d = doc();
+    if (!d || !original) return;
+    var name = nameIn.value.trim() || original.name;
+    var title = titleIn.value.trim() || original.title;
+    var accent = normHex(colorIn.value) || original.accent;
+    var brand = d.querySelector('header .brand');
+    var h1 = d.querySelector('h1');
+    var footer = d.querySelector('footer');
+    if (brand) brand.textContent = name;
+    if (h1) h1.textContent = title;
+    d.title = original.docTitle.replace(original.name, name);
+    if (footer && original.footer !== null) footer.firstChild.nodeValue = original.footer.replace(original.name, name);
+    d.documentElement.style.setProperty('--accent', accent);
+    colorVal.textContent = accent;
+    updateContrast(accent);
+  }
+
+  function updateContrast(accent) {
+    var onBg = ratio(accent, original.bg);
+    var onButton = ratio(accent, original.button);
+    var low = Math.min(onBg, onButton);
+    if (low >= 4.5) {
+      contrastEl.className = 'pg-contrast';
+      contrastEl.textContent = 'Readable: button text and labels have enough contrast with this color.';
+    } else {
+      contrastEl.className = 'pg-contrast warn';
+      contrastEl.textContent = 'Low contrast (' + low.toFixed(1) + ':1): button text or labels may be hard to read. Aim for at least 4.5:1.';
+    }
+  }
+
+  function fillInputs() {
+    nameIn.value = original.name;
+    titleIn.value = original.title;
+    colorIn.value = original.accent;
+    colorVal.textContent = original.accent;
+    updateContrast(original.accent);
+  }
+
+  // Each load of the iframe (new template or restore) reads the original values from the demo file.
+  frame.addEventListener('load', function () {
+    var d = doc();
+    if (!d || !d.querySelector('h1')) {
+      contrastEl.className = 'pg-contrast warn';
+      contrastEl.textContent = 'The preview could not be loaded. Open this page from the website address, not as a local file.';
+      return;
+    }
+    original = readOriginal(d);
+    fillInputs();
+  });
+
+  function load(slug) {
+    original = null;
+    var src = '../demos/' + slug + '.html';
+    openLink.href = src;
+    frame.src = src;
+  }
+
+  form.addEventListener('change', function (e) {
+    if (e.target.name === 'template') load(e.target.value);
+  });
+  [nameIn, titleIn, colorIn].forEach(function (el) { el.addEventListener('input', apply); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+  document.getElementById('pg-reset').addEventListener('click', function () {
+    var checked = form.querySelector('input[name=template]:checked');
+    load(checked ? checked.value : 'service-providers');
+  });
+})();
+</script>
+</body></html>
