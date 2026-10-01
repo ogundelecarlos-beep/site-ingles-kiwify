@@ -14,7 +14,7 @@
  */
 window.SALES_CONFIG = {
   // true = shows the "test version" bar and the "Pending" labels.
-  testMode: true,
+  testMode: false,
 
   product: {
     name: "Your First Website with AI",
@@ -60,7 +60,7 @@ window.SALES_CONFIG = {
   },
 
   // Final public address of this sales page (used in the canonical tag).
-  siteUrl: "",
+  siteUrl: "https://site-ingles-kiwify.vercel.app/",
 
   // The three templates. "file" is the file name inside the buyer's package.
   // demoUrl points to a fictional demo in /demos (published together with this page,
