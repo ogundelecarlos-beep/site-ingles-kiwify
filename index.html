@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your First Website with AI</title>
+  <meta name="description" content="Three website templates, a customization and publishing guide, AI prompts and a pre-publish checklist for building a simple website for a small business.">
+  <meta name="theme-color" content="#faf6ec">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Filled by main.js only when testMode is true -->
+  <aside class="test-bar" id="test-bar" hidden aria-label="Test version notice">
+    <div class="test-bar__inner">
+      <p><strong>Test version.</strong> Purchases are disabled. Some details are still pending confirmation.</p>
+      <details>
+        <summary>See pending items (<span id="pending-count">0</span>)</summary>
+        <ul id="pending-list"></ul>
+      </details>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" data-product-name>Your First Website with AI</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#included">What's included</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__cta" data-buy-slot="header" hidden></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Website templates + AI assistance</p>
+          <h1 id="hero-title">Build your first website with a <span class="mark">clear starting point.</span></h1>
+          <p class="lead">Choose from three website templates, customize them with AI assistance, and follow a practical guide to publish your site.</p>
+          <div class="hero__actions">
+            <div data-buy-slot="hero"></div>
+            <a class="link-arrow" href="#templates">View the templates</a>
+          </div>
+          <ul class="chips" aria-label="Included in the package">
+            <li>3 templates</li>
+            <li>Step-by-step guide</li>
+            <li>AI prompts</li>
+            <li>Pre-publish checklist</li>
+          </ul>
+        </div>
+
+        <aside class="package-card reveal" aria-labelledby="package-title">
+          <div class="package-card__head">
+            <span class="folder-icon" aria-hidden="true"></span>
+            <h2 id="package-title" class="package-card__title">Inside the package</h2>
+          </div>
+          <ul class="file-list">
+            <li><span class="file-tag">HTML</span><span><strong>Service providers</strong> template</span></li>
+            <li><span class="file-tag">HTML</span><span><strong>Sports schools</strong> template</span></li>
+            <li><span class="file-tag">HTML</span><span><strong>Independent professionals</strong> template</span></li>
+            <li><span class="file-tag file-tag--soft">Guide</span><span>Customization and publishing guide</span></li>
+            <li><span class="file-tag file-tag--soft">Prompts</span><span>Requests for changes and reviews with AI</span></li>
+            <li><span class="file-tag file-tag--soft">Checklist</span><span>What to check before publishing</span></li>
+          </ul>
+          <p class="package-card__note">The templates are plain HTML, CSS and JavaScript, with no libraries or external images. They open in any modern browser.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. Templates -->
+    <section class="section" id="templates" aria-labelledby="templates-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The templates</p>
+          <h2 id="templates-title">Three templates to start from</h2>
+          <p>These are customizable templates, not websites built to order. Each one comes with sample content that you replace with real information about your business.</p>
+          <p>The previews and demos below are filled in with <strong>fictional businesses</strong> to show what a finished page can look like.</p>
+        </header>
+        <div class="template-grid" id="template-grid">
+          <noscript><p>Turn on JavaScript to see the template details.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. How it works -->
+    <section class="section section--tinted" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Three steps, at your own pace</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3>Choose a template</h3>
+            <p>Pick the one closest to your type of business and make a copy to work on.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3>Customize text, colors and contact</h3>
+            <p>Replace the sample content with your own, adjust the color palette and set up your contact button. Use the prompts to ask an AI assistant for help.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3>Check the result and publish</h3>
+            <p>Review your page with the checklist, then follow the guide to publish it on a hosting service of your choice.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. What's included -->
+    <section class="section" id="included" aria-labelledby="included-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What's included</p>
+          <h2 id="included-title">What each part helps you do</h2>
+        </header>
+        <div class="included-grid">
+          <article class="included reveal">
+            <h3>Three website templates</h3>
+            <p>Single-page websites with an intro, what you offer, an about section, how it works, a short FAQ and a WhatsApp contact button. Each one is a single file that adapts to phone and desktop screens.</p>
+          </article>
+          <article class="included reveal">
+            <h3>Customization and publishing guide</h3>
+            <p>Shows how to make a safe copy, where to change text and colors, how to set up the contact button, how to check the page in your browser and how to publish it on a static hosting service. Includes fixes for common problems.</p>
+          </article>
+          <article class="included reveal">
+            <h3>AI prompts</h3>
+            <p>Ready-to-adapt requests for customizing content, changing the color palette, setting up contact on WhatsApp or switching it to email, asking for an independent review and describing a bug so the AI can suggest a small fix.</p>
+          </article>
+          <article class="included reveal">
+            <h3>Pre-publish checklist</h3>
+            <p>A list to confirm before going live: real information only, working links, no horizontal scrolling on phones, keyboard navigation, no passwords or keys in the code, and HTTPS after publishing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Who it's for -->
+    <section class="section section--tinted" id="fit" aria-labelledby="fit-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Who it's for</p>
+          <h2 id="fit-title">Is this the right fit?</h2>
+        </header>
+        <div class="fit-grid">
+          <div class="fit fit--yes reveal">
+            <h3>A good fit if you</h3>
+            <ul>
+              <li>Want a simple page that presents your small business or your work.</li>
+              <li>Are willing to edit a file, try changes and check the result yourself.</li>
+              <li>Want to learn the basics needed to review what an AI assistant changes.</li>
+              <li>Prefer to start from an organized structure instead of a blank page.</li>
+            </ul>
+          </div>
+          <div class="fit fit--no reveal">
+            <h3>Not the right fit if you need</h3>
+            <ul>
+              <li>An online store, payments or a shopping cart.</li>
+              <li>User accounts, logins, a database or an admin panel.</li>
+              <li>A booking or management system.</li>
+              <li>Someone to customize or publish the site for you.</li>
+            </ul>
+            <p class="fit__note">Those features require a separate project, with its own infrastructure and testing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Offer -->
+    <section class="section" id="offer" aria-labelledby="offer-title">
+      <div class="container">
+        <div class="offer reveal">
+          <div class="offer__main">
+            <p class="eyebrow">The package</p>
+            <h2 id="offer-title" data-product-name>Your First Website with AI</h2>
+            <div class="price">
+              <span class="price__value" id="price-value">—</span>
+              <span class="price__billing" id="price-billing"></span>
+              <span class="pending-tag" id="price-pending" hidden>Proposed price · not confirmed</span>
+            </div>
+            <ul class="check-list">
+              <li>3 website templates: service providers, sports schools, independent professionals</li>
+              <li>Customization and publishing guide</li>
+              <li>AI prompts for changes and reviews</li>
+              <li>Pre-publish checklist</li>
+            </ul>
+            <div data-buy-slot="offer"><noscript><p class="buy-note">Purchase options require JavaScript.</p></noscript></div>
+          </div>
+          <div class="offer__side">
+            <h3>Not included</h3>
+            <p>Domain, hosting and AI tool subscriptions are not included and may have their own costs. Customization by the seller is not included.</p>
+            <h3>You'll need</h3>
+            <p>A computer, a web browser, a text editor and the willingness to check each change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section section--tinted" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Do I need to know how to code?</summary>
+            <div class="faq__body">
+              <p>You don't need prior coding experience to start, but you will edit HTML files in a text editor. The guide shows where to change text, colors and contact details. Expect to learn a few basics along the way so you can check that everything works.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I use a template for my business?</summary>
+            <div class="faq__body">
+              <p>Yes. You can adapt the templates and use the result on personal or commercial websites. You can't resell or redistribute the original package as your own product. Any images, logos or text you add must be yours or used with permission.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I customize it using Claude or another AI?</summary>
+            <div class="faq__body">
+              <p>Yes. The prompts are written for general-purpose AI assistants, such as Claude or similar tools. AI subscriptions are not included. AI can make mistakes, so the guide recommends small changes and checking the result after each one.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Do visitors contact me through WhatsApp?</summary>
+            <div class="faq__body">
+              <p>The templates come with a WhatsApp button that opens a chat with your business number. If you prefer email, the prompts include a request to switch the button to an email link. The templates don&#39;t include contact forms.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Are a domain and hosting included?</summary>
+            <div class="faq__body">
+              <p>No. The guide explains how to publish on a hosting service that accepts static websites. Hosting services and domains have their own terms and may have costs. Check them before signing up.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Does the package include an online store or an admin panel?</summary>
+            <div class="faq__body">
+              <p>No. The templates are presentation pages. They don't include a store, payments, logins, a database, a management system or forms that collect data.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Are there videos?</summary>
+            <div class="faq__body">
+              <p>No. This version doesn't include video lessons. The package is made of files: templates, a written guide, prompts and a checklist.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do I receive the files?</summary>
+            <div class="faq__body" data-config-answer="delivery"></div>
+          </details>
+          <details>
+            <summary>How does support work?</summary>
+            <div class="faq__body" data-config-answer="support"></div>
+          </details>
+          <details>
+            <summary>How does the guarantee work?</summary>
+            <div class="faq__body" data-config-answer="guarantee"></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="brand" data-product-name>Your First Website with AI</p>
+        <p id="footer-seller"></p>
+        <p id="footer-support"></p>
+      </div>
+      <nav aria-label="Legal" id="footer-legal-nav" hidden>
+        <ul class="footer-links" id="footer-legal"></ul>
+      </nav>
+      <p class="site-footer__fine">Not affiliated with, endorsed by or partnered with Anthropic, Kiwify or any other company mentioned on this page. Product names belong to their respective owners.</p>
+    </div>
+  </footer>
+</body>
+</html>
